@@ -8,7 +8,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from datasets import load_dataset
 import fire
 import time
-from roberta_fine_tune import eval, process_hf_dataset, process_lm_dataset, process_custom_dataset
+from roberta_oe import eval, process_hf_dataset, process_lm_dataset, process_custom_dataset
 
 SAVE_PATH = 'acl21_output/roberta_oe/'
 if not os.path.exists(SAVE_PATH):
